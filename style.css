@@ -1,0 +1,196 @@
+/* CSS 1: Dasar dan selector */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #243047;
+    background-color: #f2f5fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* CSS 2: Font, text, dan background */
+.header {
+    padding: 32px 0;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #163a70, #2674b8);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    color: #e2edff;
+}
+
+.navbar {
+    background-color: #102b50;
+}
+
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 12px 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #2674b8;
+}
+
+/* CSS 3: Layout dan display */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 28px 0;
+    padding: 28px;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(16, 43, 80, 0.08);
+}
+
+.avatar {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 4px solid #cce3ff;
+    border-radius: 50%;
+    color: white;
+    background-color: #2674b8;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero h2,
+.card h2 {
+    color: #163a70;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: #2674b8;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #163a70;
+}
+
+/* CSS 4: Box model */
+.card {
+    margin-bottom: 24px;
+    padding: 24px;
+    border: 1px solid #e0e8f2;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 3px 12px rgba(16, 43, 80, 0.05);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.skill {
+    flex: 1 1 220px;
+    padding: 18px;
+    border-left: 4px solid #2674b8;
+    border-radius: 6px;
+    background-color: #f2f7ff;
+}
+
+.skill h3 {
+    color: #163a70;
+}
+
+/* Form */
+form label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #c8d4e3;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #9bc9ff;
+    border-color: #2674b8;
+}
+
+textarea {
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Positioning */
+.footer {
+    position: relative;
+    margin-top: 32px;
+    padding: 18px;
+    color: white;
+    text-align: center;
+    background-color: #102b50;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        padding: 10px 12px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
